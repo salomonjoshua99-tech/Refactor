@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../atoms/section_heading.dart';
-import '../atoms/app_button.dart';
-import '../molecules/labeled_form_field.dart';
+import '../atoms/App_buttons.dart';
+import '../molecules/labeled_from_field.dart';
 import '../molecules/category_dropdown.dart';
 
 class AddProductForm extends StatefulWidget {

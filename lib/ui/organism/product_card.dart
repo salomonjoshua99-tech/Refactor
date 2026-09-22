@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../atoms/product_icon_avatar.dart';
+import '../atoms/icon_avatar.dart';
 import '../atoms/price_text.dart';
-import '../atoms/app_button.dart';
-import '../atoms/delete_icon_button.dart';
+import '../atoms/App_buttons.dart';
+import '../atoms/delete_icon.dart';
 
 class ProductCard extends StatelessWidget {
   final Map<String, dynamic> product;

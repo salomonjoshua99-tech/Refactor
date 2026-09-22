@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-
+/// ATOM
+/// Justification: AppButton is an Atom because it is a reusable,
+/// styled StatelessWidget that fires whatever callback it is given
+/// without deciding what that callback does the decision of what
+/// happens on press is supplied externally, keeping the atom itself
+/// logic-free.
 class AppButton extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;

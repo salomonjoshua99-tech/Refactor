@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-
+/// ATOM
+/// Justification: ProductIconAvatar is an Atom because it is a purely
+/// decorative StatelessWidget that takes an IconData and renders it
+/// inside a styled box, with nothing beyond rendering logic.
 class ProductIconAvatar extends StatelessWidget {
   final IconData icon;
   const ProductIconAvatar({super.key, required this.icon});

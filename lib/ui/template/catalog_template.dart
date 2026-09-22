@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
-
+/// TEMPLATE
+/// Justification: CatalogTemplate is a Template because it is a pure
+/// layout skeleton an AppBar slot and three body slots (search,
+/// catalog, form) arranged in a scrollable column with no import of
+/// the product data model and no real data passed in. It only knows
+/// about Widget types, never about what a "product" is, satisfying the
+/// rule that templates must never import a data model directly.
 class CatalogTemplate extends StatelessWidget {
   final PreferredSizeWidget appBar;
   final Widget searchSlot;

@@ -3,7 +3,15 @@ import '../atoms/section_heading.dart';
 import '../atoms/App_buttons.dart';
 import '../molecules/labeled_from_field.dart';
 import '../molecules/category_dropdown.dart';
-
+/// ORGANISM
+/// Justification: AddProductForm is an Organism because it owns local
+/// logic controllers, the GlobalKey<FormState>, and field-level
+/// validation rules which is exactly the kind of local logic
+/// organisms are allowed to hold. Critically, it does not touch the
+/// app's core product list: it only hands a clean, validated data map
+/// upward through onSubmit, and the Page decides how to fold that into
+/// the real product list. This boundary is what keeps the submit logic
+/// here instead of in the Page.
 class AddProductForm extends StatefulWidget {
   final List<String> categories;
   final void Function(Map<String, dynamic> newProductData) onSubmit;

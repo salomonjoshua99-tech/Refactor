@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-
+/// ATOM
+/// Justification: AppTextField is an Atom because, despite having
+/// several parameters, it makes no decisions of its own it only
+/// renders either a TextField or TextFormField based on what it is
+/// given, and holds no controller state, validation rules, or business
+/// logic internally.
 class AppTextField extends StatelessWidget {
   final TextEditingController? controller;
   final String hintText;

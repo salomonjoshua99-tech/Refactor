@@ -4,7 +4,15 @@ import '../molecules/search_field.dart';
 import '../organism/product_catalog_list.dart';
 import '../organism/add_product_form.dart';
 import '../template/catalog_template.dart';
-
+/// PAGE
+/// Justification: CatalogPage is the Page because it is the only
+/// widget in the project that owns the actual product list
+/// (_products), along with _searchQuery and _nextId. It reacts to
+/// callbacks bubbled up from the organisms below it (add to cart,
+/// delete, new product submission) and fills the Template's slots
+/// with real, live content matching the rule that pages are the
+/// only place allowed to hold the actual product list and wire real
+/// data downward.
 class CatalogPage extends StatefulWidget {
   const CatalogPage({super.key});
 
